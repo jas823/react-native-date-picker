@@ -1,4 +1,4 @@
-import { Platform, ViewPropTypes } from 'react-native'
+import { Platform } from 'react-native'
 import PropTypes from 'prop-types'
 
 const androidProptypes = {
@@ -21,6 +21,6 @@ export default {
   locale: PropTypes.string,
   textColor: PropTypes.string,
   timeZoneOffsetInMinutes: PropTypes.number,
-  testID: ViewPropTypes.testID,
-  style: ViewPropTypes.style,
+  testID: require('deprecated-react-native-prop-types').testID,
+  style: require('deprecated-react-native-prop-types').style,
 }
